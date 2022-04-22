@@ -1,0 +1,2 @@
+IVA.OParit
+Operaciones.OParit
