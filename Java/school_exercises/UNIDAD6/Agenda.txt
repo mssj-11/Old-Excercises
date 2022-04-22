@@ -1,0 +1,73 @@
+
+Nombre: diego
+Telefono: 771271721
+Direccion: joco
+
+Nombre: pepe
+Telefono: 7121234234
+Direccion: atlaco
+
+Nombre: paco
+Telefono: 6754
+Direccion: ixtlahuaca
+
+Nombre: luis
+Telefono: 2345678
+Direccion: 7433EL ORO
+
+Nombre: Jose Luis
+Telefono: 75424356465
+Direccion: San Felipe
+
+Nombre: armando
+Telefono: 23454678567588
+Direccion: 453678 Fabela Atlacomulco
+
+Nombre: Felipe
+Telefono: 712413256
+Direccion: avenida lucas de vazques colonia 3
+
+Nombre: tomas
+Telefono: 67543
+Direccion: emiliano zapata
+
+Nombre: Gerardo
+Telefono: 987654
+Direccion: San Francisco
+
+Nombre: Mario
+Telefono: 7575676
+Direccion: 64
+
+Nombre: Adriana
+Telefono: 77675675
+Direccion: Sn.Domingo de Guzman
+
+Nombre: Michael
+Telefono: 76453245
+Direccion: Ixtlahuaca
+
+Nombre: Alexis
+Telefono: 57456789
+Direccion: Toluca
+
+Nombre: Michael Salgado Sotero
+Telefono: 7122315182
+Direccion: San Mateo Ixtk
+
+Nombre: Eduardo
+Telefono: 8765467897
+Direccion: toluca
+
+Nombre: fdhghsdmbhgfb
+Telefono: 2535634576
+Direccion: yrdtfugyiur756y
+
+Nombre: Armando
+Telefono: 68754789876
+Direccion: Toluca
+
+Nombre: Neymar Jr
+Telefono: 7327737
+Direccion: Brasil - Fabela
+
