@@ -1,0 +1,21 @@
+clear
+x = [1 3 20 40];
+fx = [56.5 113 181 214.5];
+M=4; N=M-1;
+for i=1 :N
+T(i,1) = (fx(i+1) -fx(i))/(x(i+1) -x(i));
+end
+for j=2 :N
+for i=j :N
+T(i,j) = (T(i,j-1) -T(i-1,j-1))/(x(i+1)-x(i-j+1));
+end
+end
+T
+Xint=2;
+fprintf(' N Fxint \n')
+px1=fx(1)+T(1,1)*(Xint-x(1));
+fprintf('%d %6.1f \n',1,px1)
+px2=fx(1)+T(1,1)*(Xint-x(1))+T(2,2)*(Xint-x(1))*(Xint-x(2));
+fprintf(' %d %6.1f \n',2,px2)
+px3=fx(1)+T(1,1)*(Xint-x(1))+T(2,2)*(Xint-x(1))*(Xint-x(2))+T(3,3)*(Xint-x(1))*(Xint-x(2))*(Xint-x(3));
+fprintf(' %d %6.1f \n',3,px3)

@@ -1,0 +1,15 @@
+
+x=input('INGRESE LA X MATRIZ');
+%[-2 -1 0 2 3 6]
+fx =input('INGRESE LA  MATRIZ DE LA FUNCION');
+%[-18 -5 -2 -2 7 142]
+M = 6; N = M-1;
+for i=1: N
+T(i,1) = (fx(i+1) -fx(i))/(x(i+1)-x(i));
+end
+for j=2 :N
+for i=j :N
+T(i,1) = (T (i, j-1) -T(i-1,j-1))/(x(i+1)-x(i-j+1));
+end
+end
+T
