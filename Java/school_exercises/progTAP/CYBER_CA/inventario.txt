@@ -1,0 +1,48 @@
+
+
+La cuenta total de la maquina 6 es : 30.0
+
+
+
+La cuenta total de la maquina 5 es : 5.0
+
+
+
+La cuenta total de la maquina 4 es : 5.0
+
+
+
+La cuenta total de la maquina 1 es : 5.0
+
+
+
+ La cuenta total de la maquina 2 es : 10.0
+
+
+
+la cuenta total de la maquina 3 es : 10.0
+
+
+
+La cuenta total de la maquina 1 es : 5.0
+
+
+
+ La cuenta total de la maquina 2 es : 5.0
+
+
+
+La cuenta total de la maquina 4 es : 30.0
+
+
+
+La cuenta total de la maquina 5 es : 10.0
+
+
+
+La cuenta total de la maquina 6 es : 10.0
+
+
+
+la cuenta total de la maquina 3 es : 10.0
+
