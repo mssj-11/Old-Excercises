@@ -1,0 +1,59 @@
+<breadboard type="Breadboard">
+<GX>
+<XOFFSET>0</XOFFSET>
+<YOFFSET>0</YOFFSET>
+<ZOOM>1</ZOOM>
+</GX>
+	<properties>
+	</properties>
+
+	<components>
+		<component>
+			<X>14</X>
+			<Y>84</Y>
+			<rotation>0</rotation>
+			<locked>False</locked>
+			<class>OpenVBBLibVB.Breadboard.Breadboard</class>
+				<properties>
+					<property>
+						<name>left</name>
+						<value>14</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>top</name>
+						<value>84</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>orientation</name>
+						<value>0</value>
+						<description>(visible = false)</description>
+					</property>
+					<property>
+						<name>ID</name>
+						<value></value>
+						<description>The part number to appear in the BOM</description>
+					</property>
+					<property>
+						<name>netlist</name>
+						<value></value>
+						<description>Connect component pins together using netlist</description>
+					</property>
+					<property>
+						<name>FabID</name>
+						<value></value>
+						<description>(visible = false)</description>
+					</property>
+				</properties>
+
+		</component>
+	</components>
+	<links>
+			<g id="NETLIST_REPRESENTATION" stroke="blue" stroke-width="1">
+		</g>
+		<g id="JUNCTIONS" stroke="black" fill="black">
+		</g>
+
+	</links>
+</breadboard>
