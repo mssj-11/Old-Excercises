@@ -1,0 +1,1 @@
+http://www.lcc.uma.es/~lopez/progdec/prolog/apuntes/06-grafos/grafos.pl
