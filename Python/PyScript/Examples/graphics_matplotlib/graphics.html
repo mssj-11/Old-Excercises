@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Python in the Browser</title><!--
+    <link rel="stylesheet" href="path/to/pyscript.css" />
+    <script defer src="path/to/pyscript.js"></script>-->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - matplotlib
+    </py-env>
+
+</head>
+<body>
+    
+    
+    <h1>Matplotlib</h1>
+    <div id="matplot"></div>
+    <py-script output="matplot">
+
+import matplotlib.pyplot as plt
+import matplotlib.tri as tri
+import numpy as np
+
+# First create the x and y coordinates of the points.
+n_angles = 36
+n_radii = 8
+min_radius = 0.25
+radii = np.linspace(min_radius, 0.95, n_radii)
+
+angles = np.linspace(0, 2 * np.pi, n_angles, endpoint=False)
+angles = np.repeat(angles[..., np.newaxis], n_radii, axis=1)
+angles[:, 1::2] += np.pi / n_angles
+
+x = (radii * np.cos(angles)).flatten()
+y = (radii * np.sin(angles)).flatten()
+z = (np.cos(radii) * np.cos(3 * angles)).flatten()
+
+# Create the Triangulation; no triangles so Delaunay triangulation created.
+triang = tri.Triangulation(x, y)
+
+# Mask off unwanted triangles.
+triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),y[triang.triangles].mean(axis=1))< min_radius)
+
+fig1, ax1 = plt.subplots()
+ax1.set_aspect('equal')
+tpc = ax1.tripcolor(triang, z, shading='flat')
+fig1.colorbar(tpc)
+ax1.set_title('Tripcolor of Delaunay Triangulation, Flat Shading')
+
+fig1
+
+    </py-script>
+</body>
+</html>
