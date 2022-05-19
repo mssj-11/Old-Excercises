@@ -1,0 +1,13 @@
+// Despues de agregar el http, serv, puerto 
+//Instalamos el sig. paquete:
+npm install -g nodemon
+
+Despues
+//Nos dirigimos a Power shell y lo ejecutamos como Adm. ne ingresamnos el sig. comando:
+Set-ExecutionPolicy unrestricted
+
+// Y presionamos --> S
+
+//Volvemos a ejecutar el archivo pero ahora con el sig. comando:
+nodemon servidor.js
+
