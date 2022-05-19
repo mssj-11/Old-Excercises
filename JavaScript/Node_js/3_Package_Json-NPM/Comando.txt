@@ -1,0 +1,13 @@
+//copiamos y pegamos los ejercicos anteriores [animales y contador]
+PASO 1 - Iniciando:
+npm init -y
+//Esto creara el archivo package.json de nuestro codigo anterior 
+
+
+PASO 2 - Intalando paquetes --> primero verificamos que tenemos instalado --> npm install -g cowsay
+// Ejecutar el sig. Codigo:
+npm i cowsay
+
+// Ejecutar el sig. Codigo:
+node contador.js
+
