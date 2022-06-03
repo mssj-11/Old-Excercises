@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing{
+    width: 22ch;
+    font-size: 2em;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 2s steps(22),
+                blink .5s step-end infinite alternate;
+}
+
+
+@keyframes typing{
+    from{  width: 0; }
+}
+
+@keyframes blink{
+    50%{  border-color: transparent;  }
+}
