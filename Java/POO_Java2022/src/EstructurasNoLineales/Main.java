@@ -1,4 +1,5 @@
 package EstructurasNoLineales;
+
 /**
  *
  * @author HP
@@ -15,6 +16,7 @@ public class Main {
         arbol.insertar(50);
         arbol.insertar(53);
         
+        
         System.out.println("PREORDEN: ");
         arbol.dispararPreorden();
         System.out.println("");
@@ -23,5 +25,6 @@ public class Main {
         System.out.println("");
         System.out.println("POSTORDEN: ");
         arbol.dispararPostorden();
+        
     }
 }

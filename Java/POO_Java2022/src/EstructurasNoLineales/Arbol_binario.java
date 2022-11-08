@@ -1,8 +1,6 @@
-//    [43, 10, 8, 54, 15, 50, 53]
+//      ARBOL  [43, 10, 8, 54, 15, 50, 53]
 package EstructurasNoLineales;
-
 /**
- *
  * @author HP
  */
 public class Arbol_binario {
@@ -13,6 +11,7 @@ public class Arbol_binario {
     
     // Constructor
     public Arbol_binario(int valor){
+        // Referenciando al los objetos actuales de la clase
         this.valor = valor;
         this.nodoIzquierdo = null;
         this.nodoDerecho = null;
