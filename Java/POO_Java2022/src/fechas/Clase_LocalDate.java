@@ -17,17 +17,17 @@ public class Clase_LocalDate {
         
         //  Comparando fechas
         if(fechaPago.isBefore(fechaActual)){    // Si es anterior
-            System.out.println("La fecha ya paso");
+            System.out.println("\nLa fecha ya paso");
         }else{
-            System.out.println("Aun faltan dias");
+            System.out.println("\nAun faltan dias");
         }
         
         
         // Si es posterior
         if(fechaPago.isAfter(fechaActual)){
-            System.out.println("Aun faltan dias");
+            System.out.println("\nAun faltan dias");
         }else{
-            System.out.println("La fecha ya paso");
+            System.out.println("\nLa fecha ya paso");
         }
         
         
