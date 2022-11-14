@@ -1,4 +1,4 @@
-//  Ejemplo 3:  Listando todos los datos en una lista
+//  Ejemplo 3:  Administrando Listas
 package EstructurasDinamicasLineales;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ public class Lista_ej3 {
         //  Lista de la clase Persona
         List<Persona> lista = new ArrayList<>();
         
-        
+        /*
         Persona persona = new Persona();
         
         persona.setCodigo(1);
@@ -24,7 +24,32 @@ public class Lista_ej3 {
                             "\nCodigo: "+lista.get(0).getCodigo() + 
                             "\nNombre: "+lista.get(0).getNombre() + 
                             "\nApellidos: "+lista.get(0).getApellidos() + 
-                            "\nEdad: "+lista.get(0).getEdad());
+                            "\nEdad: "+lista.get(0).getEdad());                 */
+        
+        
+        for(int i=0; i<10; i++){
+            Persona persona = new Persona();
+            
+            persona.setCodigo(i);
+            persona.setNombre("Mike " +i);
+            persona.setApellidos("Shinoda " +i);
+            persona.setEdad(24 + i);
+            
+            lista.add(persona);
+        }
+        
+        
+        for(Persona p : lista){
+            System.out.println("Informacion de persona: "+ 
+                            "\nCodigo: "+p.getCodigo() + 
+                            "\nNombre: "+p.getNombre() + 
+                            "\nApellidos: "+p.getApellidos() + 
+                            "\nEdad: "+p.getEdad());
+            System.out.println("--------------------------------------");
+        }
+        
+        
+        
         
     }
 }

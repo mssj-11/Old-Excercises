@@ -1,4 +1,4 @@
-//  Ejemplo 3 Clase Persona:  Listando todos los datos en una lista
+//  Ejemplo 3:  Administrando Listas
 package EstructurasDinamicasLineales;
 
 public class Persona {
