@@ -1,6 +1,5 @@
 /*  Ejemplo 1: Estructura Map: Es una estructura  almacena datos, 
     permitiendo asociar valores de tipos primitivo u objetos con sus respectivas claves.                              */
-
 package Map;
 
 import java.util.HashMap;
@@ -37,6 +36,9 @@ public class Ej1 {
         System.out.println("Esta este valor? " +cripto.getOrDefault(8, "Bit")); //  Esta este valor? Bit    Ya que no existe
         
         
+        
+        
+        System.out.println("\n\n--------------------------------------------------------------");
         //  Igualdades con otro Map
         Map<Integer, String> cripto2 = new HashMap<>(); 
         cripto2.put(1, "Bitcoin");
@@ -45,21 +47,39 @@ public class Ej1 {
         cripto2.put(4, "Cardano");
         cripto2.put(5, "Solana");
         //  Tienen la misma cantidad de datos y los mismos datos
-        System.out.println("\n\nSon iguales? " +cripto.equals(cripto2));    //  Son iguales? true
+        System.out.println("Son iguales? " +cripto.equals(cripto2));    //  Son iguales? true
         
         
         
         
-        System.out.println("\n\nEjemplo Ciclo forEach");
+        System.out.println("\n\n--------------------------------------------------------------");
+        System.out.println("Ejemplo Ciclo forEach");
         //  Ejemplo con un ciclo forEach    (Clave y Valores)
         cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));    //  Funcion Lambda: Mostarar todos los valores del Map
         
         
+        
+        
+        System.out.println("\n\n--------------------------------------------------------------");
         //  Eliminando datos
         cripto.remove(4);   //  Mediante la clave el valor se eliminara
-        System.out.println("\n\nUna vez eliminada la Clave[4]");
-        //  Volvemos a mostrar los datos del Map
+        System.out.println("Una vez eliminada la Clave[4]");
+        
+        //  Opcion para Eliminar siempre y cuando coincidan tanto Clave como Valor
+        cripto.remove(3, "Binance");
+        
+        //  Volvemos a mostrar los datos del Map y ya no mostara los datos de la clave 4 y 3
         cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));    //  Funcion Lambda: Mostarar todos los valores del Map
+        
+        
+        
+        //  Metodo Replace - Para remplazar
+        System.out.println("\n\n--------------------------------------------------------------");
+        System.out.println("Remplazando Valores");
+        cripto2.replace(5, "Tether");   //  Remplazando el Valor de la Clave 5
+        cripto2.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));
+        
+        
         
     }
 }
