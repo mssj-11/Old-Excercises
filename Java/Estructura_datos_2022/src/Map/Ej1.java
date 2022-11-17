@@ -24,6 +24,10 @@ public class Ej1 {
         System.out.println("Valores: " +cripto.values());   //  Valores: [Bitcoin, Ethereum, Binance, Cardano, Solana]
         //  Pasandole parametros
         System.out.println("Valor: " +cripto.get(4));   //  Valor: Cardano
+        //  Comprobando si el Map esta vacio
+        System.out.println("Esta vacio? " +cripto.isEmpty());   //  Esta vacio? false
+        //  Tamaño del Map
+        System.out.println("El tamaño del Map es de: " +cripto.size()); //  El tamaño del Map es de: 5
         
     }
 }
