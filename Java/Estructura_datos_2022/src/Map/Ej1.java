@@ -50,9 +50,16 @@ public class Ej1 {
         
         
         
-        System.out.println("\n\nCiclo forEach");
+        System.out.println("\n\nEjemplo Ciclo forEach");
         //  Ejemplo con un ciclo forEach    (Clave y Valores)
-        cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "Valor: "+v)); // Funcion Lambda
+        cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));    //  Funcion Lambda: Mostarar todos los valores del Map
+        
+        
+        //  Eliminando datos
+        cripto.remove(4);   //  Mediante la clave el valor se eliminara
+        System.out.println("\n\nUna vez eliminada la Clave[4]");
+        //  Volvemos a mostrar los datos del Map
+        cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));    //  Funcion Lambda: Mostarar todos los valores del Map
         
     }
 }
