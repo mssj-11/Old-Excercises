@@ -18,14 +18,14 @@ public class Recorrer_Map {
         
         
         
-        System.out.println("\n\n#1 forEach tradicional");
+        System.out.println("#1 forEach tradicional");
         //  #1 forEach tradicional
         for(Map.Entry<Integer, String> ejemplo:cripto.entrySet()){
             System.out.println("Clave: "+ejemplo.getKey()+"   Valor: "+ejemplo.getValue());
         }
         
         
-        System.out.println("#2 forEach");
+        System.out.println("\n\n#2 forEach");
         //  #2 forEach
         cripto.forEach((c, v) -> System.out.println("Clave: "+c+ "   Valor: "+v));
         
@@ -35,7 +35,7 @@ public class Recorrer_Map {
         cripto.entrySet().stream().forEach(e -> System.out.println("Clave: "+e.getKey()+  "   Valor: "+e.getValue()));
         
         
-        System.out.println("\n\n#4 Iterador");
+        System.out.println("\n\n#4 Con un Iterador");
         //  #4 Iterador
         Iterator<Map.Entry<Integer, String>> iterador = cripto.entrySet().iterator();
         //  Mientra iterador tenga datos
