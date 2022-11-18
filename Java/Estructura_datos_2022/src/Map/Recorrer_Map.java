@@ -35,6 +35,13 @@ public class Recorrer_Map {
         cripto.entrySet().stream().forEach(e -> System.out.println("Clave: "+e.getKey()+  "   Valor: "+e.getValue()));
         
         
+        System.out.println("\n\n#4 Iterador");
+        //  #4 Iterador
+        Iterator<Map.Entry<Integer, String>> iterador = cripto.entrySet().iterator();
+        //  Mientra iterador tenga datos
+        while(iterador.hasNext()){
+            
+        }
         
         
         
