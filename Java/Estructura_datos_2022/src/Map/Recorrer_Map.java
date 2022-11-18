@@ -40,7 +40,8 @@ public class Recorrer_Map {
         Iterator<Map.Entry<Integer, String>> iterador = cripto.entrySet().iterator();
         //  Mientra iterador tenga datos
         while(iterador.hasNext()){
-            
+            Map.Entry<Integer, String> criptos = iterador.next();
+            System.out.println("Clave: "+criptos.getKey()+ "   Valor: "+criptos.getValue());
         }
         
         
