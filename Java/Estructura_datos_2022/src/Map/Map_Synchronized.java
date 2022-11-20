@@ -3,8 +3,10 @@ package Map;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.TreeMap;
 
 public class Map_Synchronized {
     public static void main(String[] args) {
@@ -23,7 +25,37 @@ public class Map_Synchronized {
             System.out.println("Clave: "+entry.getKey()+"   Valor: "+entry.getValue());
         }
         
-        System.out.println("\n\nUso de Tree");
+        
+        
+        
+        System.out.println("\n\nUso de TreeMap");   //Si se necesita orden para la llave
+        Map<Integer, String> diccionarioTree = new TreeMap<>();
+        
+        diccionarioTree.put(1, "Marco");
+        diccionarioTree.put(2, "Raul");
+        diccionarioTree.put(3, "Andres");
+        diccionarioTree.put(4, "Julio");
+        diccionarioTree.put(5, "Armando");
+        
+        for(Entry<Integer, String> entry:diccionarioTree.entrySet()){
+            System.out.println("Clave: "+entry.getKey()+"   Valor: "+entry.getValue());
+        }
+        
+        
+        
+        System.out.println("\n\nUso de LinkedHashMap");   //Si se necesita orden para la llave
+        Map<Integer, String> diccionarioLinked = new LinkedHashMap<>();
+        
+        diccionarioLinked.put(1, "Marco");
+        diccionarioLinked.put(2, "Raul");
+        diccionarioLinked.put(3, "Andres");
+        diccionarioLinked.put(4, "Julio");
+        diccionarioLinked.put(5, "Armando");
+        
+        for(Entry<Integer, String> entry:diccionarioLinked.entrySet()){
+            System.out.println("Clave: "+entry.getKey()+"   Valor: "+entry.getValue());
+        }
+        
         
         
         
