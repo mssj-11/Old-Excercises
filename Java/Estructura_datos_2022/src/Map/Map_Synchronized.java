@@ -43,7 +43,8 @@ public class Map_Synchronized {
         
         
         
-        System.out.println("\n\nUso de LinkedHashMap");   //Si se necesita orden para la llave
+        
+        System.out.println("\n\nUso de LinkedHashMap");   //Las claves se imprimiran en el orden establecido
         Map<Integer, String> diccionarioLinked = new LinkedHashMap<>();
         
         diccionarioLinked.put(1, "Marco");
@@ -62,8 +63,6 @@ public class Map_Synchronized {
         /*  Hashtable<c, v>   -   Aplicar bloqueo a nivel de objeto
         HashMap hm = new HashMap();
         HashMap hms = (HashMap) Collections.synchronizedMap(hm);    */
-        
-        
         
         
         
