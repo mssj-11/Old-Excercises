@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class ArrayList_ej1 {
     public static void main(String[] args) {
         
-        Auto a1 = new Auto("FJKGDF", "Azul");
-        Auto a2 = new Auto("TMYTRYN", "Verde");
-        Auto a3 = new Auto("MFDHG", "Rojo");
+        Auto a1 = new Auto("FJKGDF", "Azul");   //  Posicion 0
+        Auto a2 = new Auto("TMYTRYN", "Verde");   //  Posicion 1
+        Auto a3 = new Auto("MFDHG", "Rojo");   //  Posicion 2
         
         //  ArrayList
         ArrayList<Auto> misAutos = new ArrayList<>();
@@ -39,7 +39,7 @@ public class ArrayList_ej1 {
         System.out.println("\n\n***********************************************");
         
         
-        misAutos.add(new Auto("PREY", "Morado"));
+        misAutos.add(new Auto("PREY", "Morado"));      //  Posicion 3
         System.out.println("El tamaño es de: " +misAutos.size());
         System.out.println(misAutos);
         
@@ -48,10 +48,23 @@ public class ArrayList_ej1 {
         System.out.println("\n\nEl Auto #2 es: " +misAutos.get(1));
         
         
+        System.out.println("");
         //  Recorriendo misAutos
-        for(){
-            System.out.println("");
+        for(int i=0; i<misAutos.size(); i++){
+            System.out.print("El Auto en la posicion " +i+" es: " +misAutos.get(i));
         }
+        
+        
+        
+        
+        
+        //  Removiendo datos
+        misAutos.remove(3);
+        System.out.println("\n\nEl tamaño es de: " +misAutos.size());
+        System.out.println(misAutos);
+        
+        
+        
         
     }
 }
