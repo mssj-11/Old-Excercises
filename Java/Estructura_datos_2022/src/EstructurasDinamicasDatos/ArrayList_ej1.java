@@ -48,6 +48,7 @@ public class ArrayList_ej1 {
         System.out.println("\n\nEl Auto #2 es: " +misAutos.get(1));
         
         
+        
         System.out.println("");
         //  Recorriendo misAutos
         for(int i=0; i<misAutos.size(); i++){
@@ -62,7 +63,6 @@ public class ArrayList_ej1 {
         misAutos.remove(3);
         System.out.println("\n\nEl tamaño es de: " +misAutos.size());
         System.out.println(misAutos);
-        
         
         
         
