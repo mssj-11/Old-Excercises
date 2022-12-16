@@ -5,3 +5,9 @@ from PyPDF2 import PdfReader
 import pyttsx3
 
 
+book = open('./books/Hábitos_Atómicos.pdf', 'rb')
+pdf = PyPDF2.PdfFileReader(book)
+pages = pdf.numPages
+
+
+
