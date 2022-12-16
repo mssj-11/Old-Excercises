@@ -11,3 +11,15 @@ pages = pdf.numPages
 
 
 
+speaker = pyttsx3.init()
+
+for i in range(2, pages):
+    page = pdf.getPage(i)
+    text = page.extractText()
+    
+    speaker.setProperty('rate', 150)
+    voice = speaker.getProperty('voices')
+    speaker.setProperty('voice', voice[0].id)
+
+    speaker.say(text)
+    speaker.runAndWait()
