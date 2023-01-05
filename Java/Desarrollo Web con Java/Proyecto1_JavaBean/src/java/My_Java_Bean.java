@@ -1,6 +1,6 @@
 import java.io.Serializable;
 /**
- *
+ *  UN JAVA BEAN
  * @author HP   -   MSS
  */
 public class My_Java_Bean implements Serializable{  //  1.- Debe de ser Serializable
