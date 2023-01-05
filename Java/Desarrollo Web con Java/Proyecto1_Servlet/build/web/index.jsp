@@ -8,7 +8,11 @@
 <%@taglib prefix="x" uri="http://java.sun.com/jstl/xml" %>
 <%@taglib prefix="f" uri="http://java.sun.com/jstl/fmt" %>
 <%@taglib prefix="s" uri="http://java.sun.com/jstl/sql" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!--    Ejemplo error page  -->
+<%@page errorPage="" %>
+<%@page isErrorPage="true" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -36,6 +40,11 @@
           }else{
               out.println("x != 1");
           }
+          
+
+          
+          
+          
         %>
     </body>
 </html>
