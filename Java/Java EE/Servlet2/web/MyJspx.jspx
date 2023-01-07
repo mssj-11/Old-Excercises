@@ -13,7 +13,6 @@
         <jsp:attribute name="lang">EN</jsp:attribute>
         <jsp:body>Hello World!</jsp:body>
         
-        //  Variables implicitas de JSP
         
         
     </jsp:element>

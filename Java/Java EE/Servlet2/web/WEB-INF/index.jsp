@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : index
     Created on : 6/01/2023, 07:39:04 PM
     Author     : HP
@@ -17,12 +17,16 @@
     </head>
     <body>
         
+        <%@include file="home.html" %>
+        
+        
+        
         <% out.println("Este es un Scriptles");  %>
         
         <%
             int x = 10;
             for(int i=0; i<10; i++){
-                out.println("");
+                out.println(i+x);
             }  
         %>
         
@@ -30,6 +34,7 @@
         
         
         
+        //  Variables implicitas de JSP
         
         //  Imprimir
         <c:out value="JSLT" />
