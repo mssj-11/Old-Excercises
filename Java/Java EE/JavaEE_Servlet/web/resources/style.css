@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/01/2023, 06:28:34 PM
+    Author     : HP
+*/
+*{
+    margin: 0;  padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-servlet{
+    display: flex;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.section-form{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-width: 250px;
+    max-width: 540px;
+    margin: 17px 0 0 0;
+    padding: 20px 0;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h1{    font-size: 40px;    }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    width: 83%;
+    margin: 18px 0 5px 0;
+    color: #5a5a5a;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-text{
+    width: 83%;
+    padding: 7px;
+    font-size: 18px;
+    background-color: #e8e8e8b2;
+    transition: 250ms ease-in-out all;
+    outline: none;
+}
+.input-tex:focus{   border-bottom: 5px solid #5f27cd;    }
+
+.options-form{
+    display: flex;
+    width: 83%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+    margin: 0 7px 0 0;
+}
+
+.btn-submit{
+    width: 83%;;
+    margin: 7vh 0 0 0;
+}
+
+.btn-submit input{
+    background-color: blue;
+    color: white;
+    padding: 13px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+.btn-submit input:hover{   opacity: .9;     }

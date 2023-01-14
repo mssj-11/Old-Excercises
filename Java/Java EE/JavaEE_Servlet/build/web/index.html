@@ -9,47 +9,53 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/style.css"/>
     </head>
     <body>
-        <div>TODO write content</div>
-        <p><a href="MyServlet">Ir al Servlet</a></p>
+        <section class="text-servlet">
+            <a href="MyServlet">Ir al Servlet</a>
+        </section>
         
-        <form name="myform" action="MyServlet_Class" method="POST">
-            <table width="300">
-                <tr>
-                    <td>User:<input type="text" name="user" /></td>
-                </tr>
-                <tr>
-                    <td>Password:<input type="password" name="password" /></td>
-                </tr>
-                <tr>
-                    <td>Sexo: 
-                        Hombre<input type="radio" name="sexo" value="Hombre" />
-                        Mujer<input type="radio" name="sexo" value="Mujer" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pais: 
-                        <select name="pais">
-                            <option value="Mx">Mexico</option>
-                            <option value="Usa">Estados Unidos</option>
-                            <option value="Can">Canada</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Language: 
-                        <input type="checkbox" name="language" value="Java" />Java
-                        <input type="checkbox" name="language" value="PHP" />PHP
-                        <input type="checkbox" name="language" value="Python" />Python
-                    </td>
-                </tr>
-            </table><br>
-            
-            <input type="submit" value="Enviar" />
-            
-        </form>
-        
+        <section class="section-form">
+            <div class="title">
+                <h1>Registrate</h1>
+            </div>
+
+            <form name="myform" action="MyServlet_Class" method="POST">
+                        <label>Usuario: </label>
+                        <input type="text" name="user" class="input-text"/>
+                    
+                        <label>Contraseña: </label>
+                        <input type="password" name="password" class="input-text"/>
+                    
+                        <label>Sexo: </label>
+                            <div class="options-form">
+                                <b>Hombre</b><input class="check" type="radio" name="sexo" value="Hombre" />
+                                <b>Mujer</b><input class="check" type="radio" name="sexo" value="Mujer" />
+                            </div>
+                        
+                    
+                        <label>Pais: </label>
+                            <select name="pais" class="input-text">
+                                <option value="Mx">Mexico</option>
+                                <option value="Usa">Estados Unidos</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                        
+                    
+                        <label>Lenguaje: </label>
+                        <div class="options-form">
+                            <input type="checkbox" name="language" value="Java" /><b>Java</b>
+                            <input type="checkbox" name="language" value="PHP" /><b>PHP</b>
+                            <input type="checkbox" name="language" value="Python" /><b>Python</b>
+                        </div>
+                
+                <div class="btn-submit">
+                    <input type="submit" value="Enviar" />
+                </div>
+                
+            </form>
+        </section>
         
     </body>
 </html>
