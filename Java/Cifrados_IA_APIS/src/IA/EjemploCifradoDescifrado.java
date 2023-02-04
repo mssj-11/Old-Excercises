@@ -1,26 +1,25 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+Este ejemplo muestra cómo cifrar y descifrar un mensaje usando el algoritmo AES. 
+La clave de cifrado se define como una matriz de bytes y se utiliza para generar un objeto Llave. 
+Luego, se crea un objeto Cifrador con la clave y el algoritmo.
+*/
 package IA;
-
 /**
- *
- * @author HP
+ * @author HP - MSS
  */
 import java.security.Key;
 import java.util.Scanner;
-
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
 
 public class EjemploCifradoDescifrado {
+    
   private static final String ALGORITMO = "AES";
   private static final byte[] valorLlave = 
     new byte[] { 'L', 'a', 'M', 'e', 'j', 'o', 'r', 'L', 'l', 'a', 'v','e', 'S', 'e', 'c', 'r', 'e', 't', 'a' };
 
+  
   public static String cifrar(String datos) throws Exception {
     Key llave = generarLlave();
     Cipher c = Cipher.getInstance(ALGORITMO);
@@ -29,6 +28,7 @@ public class EjemploCifradoDescifrado {
     return DatatypeConverter.printBase64Binary(valCifrado);
   }
 
+  
   public static String descifrar(String datosCifrados) throws Exception {
     Key llave = generarLlave();
     Cipher c = Cipher.getInstance(ALGORITMO);
@@ -38,12 +38,17 @@ public class EjemploCifradoDescifrado {
     return new String(valDescifrado);
   }
 
+  
   private static Key generarLlave() throws Exception {
     return new SecretKeySpec(valorLlave, ALGORITMO);
   }
 
+  
   public static void main(String[] args) throws Exception {
+      
     Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("*****   CIFRADO y DESCIFRADO  *****");
     System.out.print("Ingrese el mensaje que desea cifrar y descifrar: ");
     String mensajeOriginal = scanner.nextLine();
     System.out.println("Mensaje original: " + mensajeOriginal);
@@ -55,11 +60,6 @@ public class EjemploCifradoDescifrado {
     System.out.println("Mensaje descifrado: " + mensajeDescifrado);
     scanner.close();
   }
+  
+  
 }
-
-
-/*
-
-Este ejemplo muestra cómo cifrar y descifrar un mensaje usando el algoritmo AES. La clave de cifrado se define como una matriz de bytes y se utiliza para generar un objeto Llave. Luego, se crea un objeto Cifrador con la clave y el algoritmo
-
-*/
