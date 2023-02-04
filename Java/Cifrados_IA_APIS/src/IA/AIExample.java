@@ -1,17 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    Ejemplo basico de un chatbot en JAVA
  */
 package IA;
-
 /**
- *
- * @author HP
+ * @author HP - MSS
  */
 import java.util.Scanner;
 
 public class AIExample {
+    
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     System.out.print("Enter your name: ");
@@ -19,4 +16,5 @@ public class AIExample {
     System.out.println("Hello " + name + ", nice to meet you!");
     in.close();
   }
+  
 }
