@@ -1,20 +1,23 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    Este ejemplo muestra cómo un chatbot puede responder a diferentes entradas del usuario, 
+    utilizando un bucle infinito. El chatbot puede responder a saludos, 
+    preguntar cómo está el usuario y despedirse hasta que el usuario dice "goodbye". 
+    Este es un ejemplo básico de cómo se puede implementar un chatbot en Java.
+*/
 package IA;
-
 /**
- *
  * @author HP
  */
 import java.util.Scanner;
 
 public class ChatbotExample {
+    
   public static void main(String[] args) {
+      
     Scanner in = new Scanner(System.in);
     System.out.println("Hello, I am a chatbot. How can I help you today?");
+    
+    
     while (true) {
       String userInput = in.nextLine();
       if (userInput.toLowerCase().contains("goodbye")) {
@@ -27,14 +30,11 @@ public class ChatbotExample {
       } else {
         System.out.println("I'm sorry, I didn't understand what you said. Can you please rephrase your question?");
       }
+      
     }
+    
     in.close();
   }
+  
+  
 }
-
-
-/*
-
-Este ejemplo muestra cómo un chatbot puede responder a diferentes entradas del usuario, utilizando un bucle infinito y la entrada de teclado. El chatbot puede responder a saludos, preguntar cómo está el usuario y despedirse cuando el usuario dice "goodbye". Este es un ejemplo básico de cómo se puede implementar un chatbot en Java.
-
-*/
