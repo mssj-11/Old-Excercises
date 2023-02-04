@@ -1,18 +1,18 @@
 /*
-    Este error significa que estás tratando de acceder a un índice fuera de los límites del arreglo. Esto puede ocurrir si estás tratando de acceder a un índice negativo o si el índice es mayor o igual al tamaño del arreglo.
-
-Para corregirlo, debes asegurarte de que el índice que estás usando para acceder a un elemento del arreglo sea válido, es decir, que esté dentro de los límites del arreglo. Puedes hacer esto verificando que el índice sea mayor o igual a 0 y menor que el tamaño del arreglo. Por ejemplo:
+    CIFRADO por SUSTITUCION
+    El índice debe de ser mayor o igual a 0 y menor que el tamaño del arreglo. 
  */
 package IA;
-
 /**
  *  EJEMPLO:    https://www.gaussianos.com/critpografia-cifrado-por-sustitucion/
- * @author HP
+ * @author HP - MSS
  */
 import java.util.Scanner;
 
 public class CifradoSustitucion {
+    
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese un mensaje: ");
         String mensaje = sc.nextLine();
@@ -51,4 +51,5 @@ public class CifradoSustitucion {
 
         System.out.println("Mensaje cifrado: " + cifrado);
     }
+    
 }
