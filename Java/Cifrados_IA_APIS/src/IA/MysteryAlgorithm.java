@@ -1,24 +1,25 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    Algoritmo Misterioso
  */
 package IA;
-
 /**
- *
- * @author HP
+ * @author HP - MSS
  */
 import java.util.Scanner;
-
 public class MysteryAlgorithm {
+    
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Input two integers: a, b: ");
-        int a = input.nextInt();
-        int b = input.nextInt();
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("*****   Mystery Algorithm   *****");
+        System.out.print("Enter the value of a: ");
+        int a = sc.nextInt();
+        System.out.print("Enter the value of b: ");
+        int b = sc.nextInt();
+        
         int x = a;
         int y = b;
+        
         while (x != y) {
             if (x > y) {
                 x = x - y;
@@ -26,6 +27,9 @@ public class MysteryAlgorithm {
                 y = y - x;
             }
         }
-        System.out.println("Result: " + x);
+        
+        System.out.println("The result is: " + x);
     }
+    
+    
 }
