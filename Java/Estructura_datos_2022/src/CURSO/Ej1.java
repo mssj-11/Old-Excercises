@@ -1,7 +1,7 @@
 package CURSO;
 
 /**
- *  //  Operadores de Relacion
+ *  //  Estructuras de Desicion: Operadores de Relacion
  * @author HP
  */
 public class Ej1 {
