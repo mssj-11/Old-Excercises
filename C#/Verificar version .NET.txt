@@ -1,0 +1,1 @@
+dir %WINDIR%\Microsoft.Net\Framework\v*/O:-N/B
