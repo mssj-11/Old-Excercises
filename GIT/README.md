@@ -1,3 +1,42 @@
+#	 Configurar tu perfil en Git Bash para la línea de comandos:
+##	1.	Configurar nombre de usuario:
+•	Establece tu nombre de usuario en Git. <br>
+####	Ejemplo:
+```sh
+git config --global user.name "Tu Nombre" 
+```
+
+##	2.	Configurar dirección de correo electrónico:
+•	Asocia tu dirección de correo electrónico con Git. <br>
+####	Ejemplo:
+```sh
+git config --global user.email "tucorreo@example.com" 
+```
+
+##	3.	Configurar editor de texto (opcional):
+•	Puedes configurar el editor de texto que prefieres para los mensajes de confirmación. <br>
+####	Ejemplo:
+```sh
+git config --global core.editor "nombre_del_editor" 
+```
+
+##	4.	Ver la configuración global:
+•	Para verificar la configuración global que has establecido. <br>
+####	Ejemplo:
+```sh
+git config --global --list
+```
+
+
+
+
+
+
+
+
+
+
+
 #	Comandos GIT de uso cotidiano
 
 
