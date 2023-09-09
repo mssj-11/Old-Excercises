@@ -5,6 +5,7 @@
 •	Inicializa un repositorio GIT en el directorio actual. <br>
 ####	Ejemplo:
 ´´´sh
+git init
 ´´´
 ##	2.	git clone <URL>
 •	Clona un repositorio remoto en tu máquina local. <br>
