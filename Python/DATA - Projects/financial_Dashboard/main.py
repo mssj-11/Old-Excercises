@@ -35,6 +35,25 @@ def plot_data(data, indicators, sync_axis=None):
   p.vbar(df.index[gain], width, df.Open[gain], df.Close[gain], fill_color='#00FF00', line_color='#00FF00')
   p.vbar(df.index[loss], width, df.Open[loss], df.Close[loss], fill_color='#FF0000', line_color='#FF0000')
 
+
+  for indicator in indicators:
+    if indicator == '30 DAY SMA':
+      df['SMA30'] = df['Close'].rolling(30).mean()
+      p.line(df.index, df.SMA30, color='blue', legend_label='30 DAY SMA')
+    elif indicator == '100 DAY SMA':
+      df['SMA100'] = df['Close'].rolling(100).mean()
+      p.line(df.index, df.SMA100, color='green', legend_label='100 DAY SMA')
+    elif indicator == 'Linear Regression Line':
+      par = np.polyfit(range(len(df.index.values)), df.Close.values, 1, full=True)
+      slope = par[0][0]
+      intercept = par[0][1]
+      y_pred = [slope * i + intercept for i in range(len(df.index.values))]
+      p.segment(df.index[0], y_pred[0], df.index[-1], color='red', legend_label='Linear Regression Line')
+
+
+    p.legend.location = 'top_left'
+    p.legend.click_policy = 'hide'
+
   return p
 
 
@@ -59,7 +78,7 @@ date_Picker_To = DatePicker(title='End Date', value='2024-02-01',
                         min_date='2000-01-01', max_date=dt.datetime.now().strftime('%Y-%m-%d'))
 
 
-indicators_Choice = MultiChoice(title='Indicators', options=['100 DAY SMA', '30 DAY EMA', 'Linear Regression Line'])
+indicators_Choice = MultiChoice(title='Indicators', options=['100 DAY SMA', '30 DAY SMA', 'Linear Regression Line'])
 
 
 load_button = Button(label='Load Data', button_type='success')
@@ -69,5 +88,6 @@ load_button.on_click(lambda: on_button_clicked(stock1_text.value, stock2_text.va
 
 
 layout = column(stock1_text, stock2_text, date_Picker_From, date_Picker_To, indicators_Choice, load_button)
+
 curdoc().clear()
 curdoc().add_root(layout)
